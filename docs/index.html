@@ -1,14 +1,183 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+  <title>AdlitoUI - Coming Soon</title>
+  <script src="https://kit.fontawesome.com/80b6b65415.js" crossorigin="anonymous"></script>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("adlitouibg.png");
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    min-height: 600px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  nav {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.952), rgba(255, 255, 255, 0.877));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.616);
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 20px 0px 0px 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 30px #000;
+    transition: background-color 0.3s ease;
+  }
+  .mail img{
+    width: 20px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+  }
+  .mail{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .mail:hover{
+    color: #00b7ff;
+  }
+
+  img{
+    width: 100px;
+    margin: 0 auto;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+  }
+  h1 {
+    font-size: 45px;
+    margin: 20px;
+    color: #ffffff;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-top: 20px;
+  }
+  
+  #countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .countdown-item {
+    margin: 0 10px;
+  }
+  
+  .countdown-item span {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .countdown-item p {
+    font-size: 14px;
+    color: #cecece;
+    margin: 5px 0 0 0;
+  }
+
+  h4{
+    position: fixed;
+    left: 20px;
+    bottom: 10px;
+    color: #fff;
+    font-size: 12px;
+  }
+  </style>
 </head>
 <body>
-    
+  <nav>
+  <a class="mail"><img src="logo.png" loading="eager" title="logo" alt="logo" contextmenu="none"></a>
+  <a href="mailto:jiteshchichole123@gmail.com" class="mail"><i class="fas fa-envelope"></i></a>
+  <a href="https://adlitoui.wordpress.com/" class="mail"><i class="fas fa-info"></i></a>
+  </nav>
+  <div class="container">
+    <img src="logoW.png" loading="eager" title="logo" alt="logo">
+    <h1>AdlitoUI</h1>
+    <h2>Coming Soon</h2>
+    <p>We're working hard to bring you an amazing user interface framework. Stay tuned!</p>
+    <div id="countdown">
+      <div class="countdown-item">
+        <span id="days">00</span>
+        <p>Days</p>
+      </div>
+      <div class="countdown-item">
+        <span id="hours">00</span>
+        <p>Hours</p>
+      </div>
+      <div class="countdown-item">
+        <span id="minutes">00</span>
+        <p>Minutes</p>
+      </div>
+      <div class="countdown-item">
+        <span id="seconds">00</span>
+        <p>Seconds</p>
+      </div>
+    </div>
+  </div>
+  <h4><i>* Create By AdlitoUI Developers</i><br><i>&copy; 2023 AdlitoUI. All rights reserved.</i></h4>
+  <script>
+    // Set the date to countdown to (e.g., the release date of AdlitoUI)
+const countdownDate = new Date("2023-09-01T00:00:00Z").getTime();
+
+// Update the countdown every second
+const countdownInterval = setInterval(() => {
+  const now = new Date().getTime();
+  const distance = countdownDate - now;
+
+  // Calculate days, hours, minutes, and seconds
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the countdown
+  document.getElementById("days").textContent = days.toString().padStart(2, "0");
+  document.getElementById("hours").textContent = hours.toString().padStart(2, "0");
+  document.getElementById("minutes").textContent = minutes.toString().padStart(2, "0");
+  document.getElementById("seconds").textContent = seconds.toString().padStart(2, "0");
+
+  // If the countdown is finished, clear the interval
+  if (distance < 0) {
+    clearInterval(countdownInterval);
+  }
+}, 1000);
+
+  </script>
 </body>
-</html>>
+</html>
