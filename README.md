@@ -22,4 +22,4 @@ To use AdlitoUI in your project, you can include the CSS and JavaScript files di
 Add the following lines to the `<head>` section of your HTML file:
 
 ```html
-Coming Soon
+<script src="https://adlitoui.netlify.app/js/adlito.ui.min.js"></script>
