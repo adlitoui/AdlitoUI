@@ -1,0 +1,21 @@
+/*
+ * AdlitoUI Global Styles
+ * Copyright (c) [2023], Adlito. All rights reserved.
+ *
+ * These global styles define the visual appearance of AdlitoUI components
+ * and layout. Modification, distribution, or reproduction of this CSS
+ * without explicit permission from AdlitoUI is prohibited.
+ *
+ * For inquiries, please contact [adlitoweb@gmail.com].
+ */
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
