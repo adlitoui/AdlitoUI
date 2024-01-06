@@ -1,0 +1,19 @@
+/*// copyright ©2022 of  jiteshchichole123@gmail.com (JITESH CHICHOLE & CODING DRAGON) //*/
+
+/* fontspace :
+license: Freeware, Non-Commercial
+link: https://www.fontspace.com/aquire-font-f43735
+ */
+ @font-face {
+    font-family: "Aquire-font";
+    src: url("./aqurie/Aquire-BW0ox.otf") format("opentype");
+    }
+    @font-face {
+        font-family: "AquireBold";
+        src: url("./aqurie/AquireBold-8Ma60.otf") format("opentype");
+        }
+        @font-face {
+            font-family: "AquireLight";
+            src: url("./aqurie/AquireLight-YzE0o.otf") format("opentype");
+            }
+  /* end*/

@@ -1,0 +1,175 @@
+/*
+ * AdlitoUI Color Styles
+ * Copyright (c) [year], Adlito. All rights reserved.
+ *
+ * These color styles define the color palette for AdlitoUI components.
+ * Modification, distribution, or reproduction of this CSS without
+ * explicit permission from AdlitoUI is prohibited.
+ *
+ * For inquiries, please contact [email address].
+ */
+
+/* Color Classes */
+.cblack {
+    color: #000;
+}
+
+.cblue {
+    color: royalblue;
+}
+
+.cgreen {
+    color:  rgb(16, 184, 16);
+}
+
+.cred {
+    color: red;
+}
+
+.cwhite {
+    color: white;
+}
+
+.cdeepblue {
+    color: #0074D9;
+}
+
+.cmintgreen {
+    color: #2ECC40;
+}
+
+.coceanteal {
+    color: #39CCCC;
+}
+
+.clightpurple {
+    color: #B10DC9;
+}
+
+.ccoralpink {
+    color: #FF4136;
+}
+
+.csunshineyellow {
+    color: #FFDC00;
+}
+
+.clavender {
+    color: #7D3C98;
+}
+
+.cslategray {
+    color: #AAAAAA;
+}
+
+.cpurple {
+    color: purple;
+}
+
+.corange {
+    color: orange;
+}
+
+.ccyan {
+    color: cyan;
+}
+
+.cdarkgreen {
+    color: darkgreen;
+}
+
+.cyellow {
+    color: yellow;
+}
+
+.cpink {
+    color: pink;
+}
+
+.cbrown {
+    color: brown;
+}
+
+.cgold {
+    color: gold;
+}
+
+.cgray {
+    color: gray;
+}
+
+.cindigo {
+    color: indigo;
+}
+
+.cultra {
+    background: linear-gradient(45deg, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.credgradient {
+    background: linear-gradient(45deg, #FF5E3A, #FF2A68);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cpurplegradient {
+    background: linear-gradient(45deg, #B06AB3, #4568DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cyellowgradient {
+    background: linear-gradient(45deg, #FFD662, #FF914D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cbluepinkgradient {
+    background: linear-gradient(45deg, #3A1C71, #D76D77, #FFAF7B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cbluegraygradient {
+    background: linear-gradient(45deg, #3494E6, #EC6EAD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ctealgradient {
+    background: linear-gradient(45deg, #20E2D7, #F9FEA5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cpinkbluegradient {
+    background: linear-gradient(45deg, #EF32D9, #89FFFD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cgoldorangegradient {
+    background: linear-gradient(45deg, #FDC830, #F37335);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cbluegray2gradient {
+    background: linear-gradient(45deg, #56CCF2, #2F80ED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cbluepurplegradient {
+    background: linear-gradient(45deg, #1B9CFC, #8C4FB6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.clightwhitegraygradient{
+    background: linear-gradient(45deg, #000000,#000000b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

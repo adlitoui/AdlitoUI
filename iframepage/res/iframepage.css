@@ -1,0 +1,151 @@
+/*
+ * AdlitoUI Global Styles
+ * Copyright (c) [2023], Adlito. All rights reserved.
+ *
+ * These global styles define the visual appearance of AdlitoUI components
+ * and layout. Modification, distribution, or reproduction of this CSS
+ * without explicit permission from AdlitoUI is prohibited.
+ *
+ * For inquiries, please contact [adlitoweb@gmail.com].
+ */
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.iframe-presentation{
+    position: relative;
+    min-height: 640px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.pmbtn {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pmbtn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.wh100per {
+    background: linear-gradient(45deg, #ff0707, #2243ff);
+    min-height: 640px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 0;
+    animation: slideFadeIn 1s ease-in-out forwards;
+}
+.wh100per img{
+    width: auto;
+    height: 100vh;
+}
+.pagenumbers {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.slide-fade-in {
+    opacity: 0;
+    display: block;
+    animation: slideFadeIn 1s ease-in-out forwards;
+}
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.autocontrols{
+    position: absolute;
+    bottom: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    transform: translateY(-0%);
+    z-index: 999;
+    right: 0;
+    padding: 10;
+}
+
+.pmbtnc{
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pmbtn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.controlsr {
+    position: absolute;
+    bottom: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    transform: translateY(-0%);
+    z-index: 999;
+    left: 0;
+    display: flex;
+    padding: 10;
+}
+
+.pmbtnr {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
